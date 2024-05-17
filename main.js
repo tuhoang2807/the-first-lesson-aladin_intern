@@ -10,7 +10,7 @@ const servicesProvideData = [
   {
     img: "images/pngtree-earth-travel-abroad-travel-tourism-tourism-promotion-png-image_505653 1.png",
     title: "Tour du lịch",
-  },
+  }
 ]
 
 const thePlacesExplore = [
@@ -40,6 +40,27 @@ const thePlacesBeauty = [
   },
 ]
 
-function main() {}
+const renderBoxRight = () => {
+  const boxRight = document.getElementById('box-right')
+
+  const html = servicesProvideData.map(item => {
+    return `
+    <div class="box-right-item">
+    <p class="box-right-text">${item.title}</p>
+    <div>
+        <img class="anh1" src="${item.img}" alt="">
+    </div>
+</div>
+    `
+  })
+
+  boxRight.innerHTML = html.join('')
+}
+
+function main() {
+  renderBoxRight()
+}
 
 main()
+
+//if, else, loop
