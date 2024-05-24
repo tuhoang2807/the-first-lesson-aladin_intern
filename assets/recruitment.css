@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+#wrapper {
+  width: auto;
+  height: auto;
+}
+
+#header-mb{
+    display: none;
+}
+
+#header .logo img {
+  width: 80%;
+  height: auto;
+  margin-left: 50px;
+}
+
+#header {
+  padding: 0px 80px;
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+}
+
+#menu .item {
+  font-size: 15px;
+  margin: 0px 8px;
+}
+
+#menu .item a {
+  color: #0d0e0d;
+  text-decoration: none;
+}
+
+#action {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+#action .item {
+  display: flex;
+  margin-left: 10px;
+  margin: 0px 12px;
+  margin-right: 10px;
+}
+
+#action .item:last-child {
+  margin-right: 0; 
+}
+
+#action .item button {
+  color: white;
+  width: 130px;
+  height: 40px;
+  background-color: #2e3192;
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+#menu .item a:hover {
+  background-color: #dadada;
+  border-radius: 10px; 
+  padding: 10px 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: scale(1); 
+  transition: all 0.3s ease; 
+}
+
+
+#banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+
+span{
+  color: red;
+}
+
+h1{
+  padding: 0px 147px;
+  margin-top: 50px;
+  color: #144E8C;
+}
+hr{
+  width: 600px;
+  margin-left: 150px;
+}
+
+.content {
+  padding: 0 160px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.content div {
+  display: flex;
+  flex-direction: column;
+}
+
+.content p , #upload p {
+  margin: 0;
+  font-weight: bold;
+  color: #2E3192;
+}
+
+
+
+.content input, .content select {
+  padding: 20px;
+  margin-top: 5px;
+  border: 1px solid #2E3192;
+  border-radius: 10px;
+}
+
+.content textarea {
+  resize: vertical;
+}
+
+
+#upload{
+  padding: 20px 160px;
+}
+
+.upload-container{
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  
+}
+
+.upload-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #004080;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 200px; 
+}
+
+.upload-btn img {
+  height: 20px;
+}
+
+.file-name {
+  font-style: italic;
+  color: #666;
+}
+
+
+
+
+
+.full-width {
+  grid-column: span 2;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 160px;
+}
+
+.button-container button {
+  padding: 10px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button {
+  background-color: #004080;
+  color: #fff;
+}
+
+.cancel-button {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+button:hover{
+  background-color: aquamarine;
+}
+
+
+
+#footer {
+  background: #2E3192;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+  margin-top: 40px;
+  
+}
+
+.box1 , .box2, .box3{
+  margin: 50px 10px;
+}
+
+.divider {
+  border-left: 1px solid #ccc;
+  height: 300px; 
+}
+
+
+#footer .box1 {
+  width: 30%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 .logo1 p {
+  font-size: 12px;
+  color: #dadada;
+  margin-top: 40px;
+}
+
+
+#footer .box2 {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#footer .box3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#footer .box2 .quick-menu,
+#footer .box3 .quick-menu {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  
+}
+
+#footer .box2 .quick-menu .item,
+#footer .box3 .quick-menu .item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+#footer .box2 .quick-menu .item a,
+#footer .box3 .quick-menu .item a{
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+#footer .box2 .quick-menu .item img,
+#footer .box3 .quick-menu .item img {
+  margin-right: 8px;
+  width: 20px; 
+  height: 20px; 
+}
+
+.now {
+  background: white;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0.25);
+  font-family: Anek Latin;
+  font-size: 15px;
+  width: 150px;
+  height: 35px;
+  margin-top: 5px;
+  color: #144e8c;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 16px;
+  color: white;
+}
+
+.logo {
+  margin-top: 10px;
+}

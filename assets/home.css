@@ -37,7 +37,7 @@ html {
 }
 
 #menu .item {
-  font-size: 13px;
+  font-size: 15px;
   margin: 0px 8px;
 }
 
@@ -83,7 +83,7 @@ html {
 
 #banner {
   width: auto;
-  background-image: url("images/background.jpg");
+  background-image: url("/images/background.jpg");
   height: 601px;
   margin-top: 40px;
   display: flex;
