@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felexbox</title>
     <link rel="stylesheet" href="/assets/news.css">
+    
 </head>
 
 <body>
@@ -53,12 +54,50 @@
                 <div class="item"><a href=""><img src="icon-mb/timkiem.png" alt=""></a></div>
                 <div class="item"><a href=""><img src="images/meo.png" alt=""></a></div>
                 <div class="item"><a href=""><img src="images/vietnam 2.png" alt=""></a></div>
-                <div class="item"><button class="button0">Đăng nhập</button></div>
+                <div class="item"><button class="button0" id="loginButton">Đăng nhập</button></div>
             </div>
         </div>
 
+        <div id="overlay"></div> <!-- Lớp phủ nền -->
+
         <div id="header-mb">
-            <button><img src="icon-mb/menu.png" alt=""></button>
+            <button class ="menuBtn"><img src="icon-mb/menu.png" alt=""></button>
+            <div class = "menu-box">
+                <div id="menu-mb" class="menu-content">
+                    <div class="item">
+                        <a href="home.html">TRANG CHỦ</a>
+                    </div>
+    
+                    <div class="item">
+                        <a href="">GIỚI THIỆU</a>
+                    </div>
+    
+                    <div class="item">
+                        <a href="product-main.html">SẢN PHẨM</a>
+                    </div>
+    
+                    <div class="item">
+                        <a href="">DỰ ÁN</a>
+                    </div>
+    
+                    <div class="item">
+                        <a href="news-main.html">TIN TỨC</a>
+                    </div>
+    
+                    <div class="item">
+                        <a href="">LIÊN HỆ</a>
+                    </div>
+    
+                    <div class="item">
+                        <a href="recruitment-list.html">TUYỂN DỤNG</a>
+                    </div>
+    
+                    <div class="item">
+                        <a href="">THƯ VIỆN ẢNH</a>
+                    </div>
+                </div>
+
+            </div>
             <a href="" class="logo"><img src="images/Group 1966.png" alt=""></a>
             <a href=""><img src="icon-mb/timkiem.png" alt=""></a>
         </div>
@@ -181,7 +220,7 @@
 
             <div class="box2">
                 <ul class="quick-menu">
-                    <h4>CÔNG TY TNHH THIẾT BỊ CÔNG NGHIỆP THỰC PHẨM AN VƯỢNG</h4>
+                    <h6>CÔNG TY TNHH THIẾT BỊ CÔNG NGHIỆP THỰC PHẨM AN VƯỢNG</h6>
                     <li class="item">
                         <a href=""><img src="icon-pc/place_24px.png" alt="Phone"> B5-26 Vinhomes Gardenia Hàm Nghi Cầu Diễn, Nam Từ Liêm, Hà Nội
                             </a>
@@ -208,7 +247,7 @@
 
             <div class="box3">
                 <ul class="quick-menu">
-                    <h4>NHÀ MÁY CƠ KHÍ ANFICO</h4>
+                    <h6>NHÀ MÁY CƠ KHÍ ANFICO</h6>
                     <li class="item">
                         <a href=""><img src="icon-pc/place_24px.png" alt="Phone"> Cụm Công nghiệp Kim Bình, xã Kim Bình, Thành phố Phủ Lý, tỉnh Hà Nam
                             </a>
@@ -243,7 +282,7 @@
 
 
 
-
+        <script defer src="/script/main.js"></script>
 
 
 

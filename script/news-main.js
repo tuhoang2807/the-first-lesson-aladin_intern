@@ -49,14 +49,18 @@ function displayNewsItems(page) {
 
         const textContainer = document.createElement('div');
 
-        const h4 = document.createElement('h4');
-        h4.textContent = item.title;
+        const titleLink = document.createElement('a');
+        titleLink.href = 'news.html'; 
+        titleLink.textContent = item.title;
+        titleLink.classList.add('title');
 
-        const p = document.createElement('p');
-        p.textContent = item.description;
+        const descriptionLink = document.createElement('a');
+        descriptionLink.href = 'news.html'; 
+        descriptionLink.textContent = item.description;
+        descriptionLink.classList.add('description');
 
-        textContainer.appendChild(h4);
-        textContainer.appendChild(p);
+        textContainer.appendChild(titleLink);
+        textContainer.appendChild(descriptionLink);
 
         newsItemDiv.appendChild(img);
         newsItemDiv.appendChild(textContainer);
